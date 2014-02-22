@@ -13,6 +13,21 @@ function fizzBuzz(input) {
       _output = 'Buzz';
     } else {
       _output = input[i];
+
+      // 1. make sure there are two input prior current one
+      // 2. those two inputs should be either a multiple of 3 or 5
+      // 
+      // Though it's possible for these combination of consecutive
+      // output to produce 'Bazz', it'll never happen:
+      // - Fizz Fizz
+      // - Buzz Buzz
+      // - Fizz/Buzz FizzBuzz
+      // - FizzBuzz Fizz/Buzz
+      if (input[i-1] && input[i-2] 
+          && (input[i-1] % 5 == 0 || input[i-1] % 3 == 0) 
+          && (input[i-2] % 5 == 0 || input[i-2] % 3 == 0)) {
+        _output = 'Bazz';
+      }
     }
 
     output.push(_output);
