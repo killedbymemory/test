@@ -65,8 +65,8 @@ assertEqual(fizzBuzz([45, 46, 47, 48, 49, 50]), 'FizzBuzz 46 47 Fizz 49 Buzz');
 
 assertEqual(fizzBuzzBazz([4, 5, 6, 7, 8, 9, 10, 11]), '4 Buzz Fizz Bazz 8 Fizz Buzz Bazz');
 assertEqual(fizzBuzzBazz([18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]), 'Fizz 19 Buzz Fizz Bazz 23 Fizz Buzz Bazz Fizz 28 29 FizzBuzz');
-//assertEqual(fizzBuzzBazz([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), '1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz');
-//assertEqual(fizzBuzzBazz([45, 46, 47, 48, 49, 50]), 'FizzBuzz 46 47 Fizz 49 Buzz');
+assertEqual(fizzBuzzBazz([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]), '1 2 Fizz 4 Buzz Fizz Bazz 8 Fizz Buzz Bazz');
+assertEqual(fizzBuzzBazz([98, 99, 100, 101, 102, 103]), '98 Fizz Buzz Bazz Fizz 103');
 
 
 //console.log(fizzBuzzBazz([4, 5, 6, 7, 8]));
