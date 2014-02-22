@@ -2,17 +2,20 @@
 
 function fizzBuzz(input) {
   var output = [];
+  var _output;
 
   for(var i in input) {
     if ((input[i] % 3 == 0) && (input[i] % 5 == 0)) {
-      output.push('FizzBuzz')
+      _output = 'FizzBuzz';
     } else if (input[i] % 3 == 0) {
-      output.push('Fizz');
+      _output = 'Fizz';
     } else if (input[i] % 5 == 0) {
-      output.push('Buzz');
+      _output = 'Buzz';
     } else {
-      output.push(input[i]);
+      _output = input[i];
     }
+
+    output.push(_output);
   }
 
   return output.join(' ');
@@ -20,19 +23,22 @@ function fizzBuzz(input) {
 
 function fizzBuzzBazz(input) {
   var output = [];
+  var _output;
 
   for(var i in input) {
     if ((input[i] % 3 == 0) && (input[i] % 5 == 0)) {
-      output.push('FizzBuzz')
+      _output = 'FizzBuzz';
     } else if (input[i] % 3 == 0) {
-      output.push('Fizz');
+      _output = 'Fizz';
     } else if (input[i] % 5 == 0) {
-      output.push('Buzz');
+      _output = 'Buzz';
     } else if (input[i-1] && input[i-2] && ((input[i-1] % 5 == 0 || input[i-1] % 3 == 0) && (input[i-2] % 5 == 0 || input[i-2] % 3 == 0))) {
-      output.push('Bazz');
+      _output = 'Bazz';
     } else {
-      output.push(input[i]);
+      _output = input[i];
     }
+
+    output.push(_output);
   }
 
   return output.join(' ');
