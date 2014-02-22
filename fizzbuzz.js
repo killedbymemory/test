@@ -56,6 +56,8 @@ function assertEqual(condition, test) {
   console.log(output);
 }
 
-assertEqual(fizzBuzz([12, 13, 14, 15, 16]), 'Fizz 13 14 FizzBuzz 16');
-assertEqual(fizzBuzz([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), '1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz');
-assertEqual(fizzBuzz([45, 46, 47, 48, 49, 50]), 'FizzBuzz 46 47 Fizz 49 Buzz');
+assertEqual(fizzBuzz([-5, -4, -3, -2, -1, 0, 1, 2, 3]), '0 1 2 Fizz');
+assertEqual(fizzBuzz([4, 5, 6, 7, 8, 9, 10, 11]), '4 Buzz Fizz Bazz 8 Fizz Buzz Bazz');
+assertEqual(fizzBuzz([18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]), 'Fizz 19 Buzz Fizz Bazz 23 Fizz Buzz Bazz Fizz 28 29 FizzBuzz');
+assertEqual(fizzBuzz([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]), '0 1 2 Fizz 4 Buzz Fizz Bazz 8 Fizz Buzz Bazz');
+assertEqual(fizzBuzz([98, 99, 100, 101, 102, 103]), '98 Fizz Buzz Bazz Fizz 103');
