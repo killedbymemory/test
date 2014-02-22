@@ -5,15 +5,20 @@ function fizzBuzz(input) {
   var _output;
 
   for(var i in input) {
-    if ((input[i] % 3 == 0) && (input[i] % 5 == 0)) {
+    _output = input[i];
+
+    if (input[i] < 0) {
+      // only take care of positive integer
+      continue;
+    } else if (input[i] == 0) {
+      _output = 0;
+    } else if ((input[i] % 3 == 0) && (input[i] % 5 == 0)) {
       _output = 'FizzBuzz';
     } else if (input[i] % 3 == 0) {
       _output = 'Fizz';
     } else if (input[i] % 5 == 0) {
       _output = 'Buzz';
     } else {
-      _output = input[i];
-
       // 1. make sure there are two input prior current one
       // 2. those two inputs should be either a multiple of 3 or 5
       // 
